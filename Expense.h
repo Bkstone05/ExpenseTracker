@@ -22,6 +22,7 @@ class Expense
 
         //Need class/struct for income tracking of multiple jobs
         ENode *head;
+        ENode* next; 
 
     public:
         Expense()

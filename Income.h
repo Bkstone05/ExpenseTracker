@@ -17,9 +17,11 @@ class Income
         {
             string name;
             int amount;
+            INode* next; 
         };
 
         INode *head;
+
     
     public: 
     Income()
@@ -27,8 +29,11 @@ class Income
         head = NULL;
     }
     ~Income(){}
-    
-    //need sorting
+    INode* insertNode(INode value);
+    int traverse(INode* head, int income);
+    void deleteIncome(int pos);
+    void displayIncome() const;
+    void quickSort(INode value);
 };
 
 #endif
